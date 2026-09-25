@@ -18,43 +18,204 @@ The project is divided into four independent tasks, with each Python script repr
 
 ---
 
-## 🔄 Data Pipeline
+## 🧩 Project Tasks
 
-```text
-              🌐 LIVE TREND DATA
-                     │
-                     ▼
-        ┌──────────────────────────┐
-        │  1️⃣ DATA COLLECTION      │
-        │  task1_data_collection.py│
-        └─────────────┬────────────┘
-                      │
-                      ▼
-             📄 trending_data.csv
-                      │
-                      ▼
-        ┌──────────────────────────┐
-        │  2️⃣ DATA PROCESSING      │
-        │  task2_data_processing.py│
-        └─────────────┬────────────┘
-                      │
-                      ▼
-          📄 cleaned_trending_data.csv
-                      │
-                      ▼
-        ┌──────────────────────────┐
-        │  3️⃣ DATA ANALYSIS        │
-        │  task3_analysis.py       │
-        └─────────────┬────────────┘
-                      │
-                      ▼
-             📄 analysis_results.csv
-                      │
-                      ▼
-        ┌──────────────────────────┐
-        │  4️⃣ DATA VISUALIZATION   │
-        │  task4_visualization.py  │
-        └─────────────┬────────────┘
-                      │
-                      ▼
-                📊 INSIGHTS
+### 1️⃣ Data Collection
+
+**File: [task1_data_collection.py](https://github.com/sangarikumar/trendpulse-Sivasangari/blob/main/task1_data_collection.py)**
+
+Collects trending data from an online source using Python and stores the raw data in CSV format.
+
+#### Key Activities:
+- Connect to the trend data source
+- Define topics to monitor
+- Collect recent trend information
+- Store the collected data
+- Export the raw dataset to CSV
+
+**Output: trending_data.csv**
+
+### 2️⃣ Data Processing
+
+**File: [task2_data_processing.py](https://github.com/sangarikumar/trendpulse-Sivasangari/blob/main/task2_data_processing.py)**
+
+Cleans and prepares the collected data for analysis.
+
+#### Key Activities:
+- Load the raw CSV dataset
+- Convert date values
+- Remove duplicate records
+- Handle missing values
+- Sort the dataset
+- Export the cleaned dataset
+
+**Output: cleaned_trending_data.csv**
+
+### 3️⃣ Data Analysis
+
+**File: [task3_analysis.py](https://github.com/sangarikumar/trendpulse-Sivasangari/blob/main/task3_analysis.py)**
+
+Analyses the processed data to identify important trends and patterns.
+
+#### Key Activities:
+- Calculate average trend interest
+- Calculate maximum trend interest
+- Identify the most popular topic
+- Generate analysis results
+- Export the results to CSV
+
+**Output: analysis_results.csv**
+
+### 4️⃣ Data Visualization
+
+***File: [task4_visualization.py](https://github.com/sangarikumar/trendpulse-Sivasangari/blob/main/task4_visualization.py)**
+
+Converts the analysed data into visual insights using charts.
+
+#### Key Activities:
+- Load processed data
+- Plot trend changes over time
+- Compare different topics
+- Add chart titles and labels
+- Generate a visual trend report
+
+**Output: trend_analysis.png**
+
+---
+
+### 📊 Pipeline Outputs
+| **File** | **Description** |
+|----------|-----------------|
+| trending_data.csv |	Raw collected trend data |
+| cleaned_trending_data.csv	| Processed and cleaned data |
+| analysis_results.csv | Analytical results |
+| trend_analysis.png | Trend visualization |
+
+---
+
+### 📈 Visualization
+
+The visualization stage presents the trend data in an easy-to-understand graphical format.
+
+The chart can be used to identify:
+
+1. 📈 Changes in interest over time
+2. 🔥 Topics with higher interest
+3. 📊 Differences between topics
+4. 📉 Changes and fluctuations in trends
+
+---
+
+### 🛠️ Technologies Used
+
+This project demonstrates the complete workflow of a Python data pipeline.
+
+| **Technology** | **Purpose** |
+|------------|---------|
+| 🐍 Python	| Core programming language |
+| 🐼 Pandas |	Data processing and analysis |
+| 📈 Matplotlib |	Data visualization |
+| 🔎 PyTrends |	Trend data collection |
+| 🐙 Git | Version control |
+| 🌐 GitHub |	Source code hosting |
+| 💻 PyCharm | Development environment |
+
+---
+
+### 🔄 End-to-End Workflow
+
+       LIVE DATA
+           │
+           ▼
+    ┌─────────────┐
+    │   COLLECT   │
+    └──────┬──────┘
+           │
+           ▼
+      RAW DATA
+           │
+           ▼
+    ┌─────────────┐
+    │   PROCESS   │
+    └──────┬──────┘
+           │
+           ▼
+     CLEAN DATA
+           │
+           ▼
+    ┌─────────────┐
+    │   ANALYSE   │
+    └──────┬──────┘
+           │
+           ▼
+      INSIGHTS
+           │
+           ▼
+    ┌─────────────┐
+    │ VISUALIZE   │
+    └──────┬──────┘
+           │
+           ▼
+       📊 CHARTS
+
+---
+
+### 🌟 Project Highlights
+
+**🔹 Real-World Data**
+
+Works with trend information collected from an online data source.
+
+**🔹 Automated Pipeline**
+
+The four Python scripts represent a complete data workflow from collection to visualization.
+
+**🔹 Reproducible**
+
+The project can be recreated by installing the dependencies and running the scripts in sequence.
+
+**🔹 Beginner-Friendly**
+
+The project demonstrates fundamental concepts of data science and Python without requiring a complex infrastructure.
+
+---
+
+### 🚀 Future Improvements
+
+Possible future enhancements include:
+
+- 📡 Add more live data sources
+- 🤖 Apply machine learning for trend prediction
+- 📊 Add interactive dashboards
+- 🗄️ Store data in a database
+- ⏰ Schedule automatic data collection
+- 📧 Add automated trend alerts
+- 🌐 Build a web dashboard
+
+---
+
+### ⭐ Final Takeaway
+
+TrendPulse transforms raw trending data into clean datasets, meaningful analysis, and visual insights.
+
+🌐 Collect → 🧹 Clean → 🔍 Analyse → 📊 Visualise
+
+That's the TrendPulse journey. 🚀
+
+---
+
+### 👩‍💻 Author
+Sivasangari Selvakumar
+
+**GitHub:**
+https://github.com/sangarikumar
+
+---
+
+### 📌 Repository
+
+**🔗 TrendPulse GitHub Repository**
+
+https://github.com/sangarikumar/trendpulse-Sivasangari
+
+---
